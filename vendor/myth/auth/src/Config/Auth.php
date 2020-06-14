@@ -1,4 +1,6 @@
-<?php namespace Myth\Auth\Config;
+<?php
+
+namespace Myth\Auth\Config;
 
 use CodeIgniter\Config\BaseConfig;
 use Myth\Auth\Authentication\LocalAuthenticator;
@@ -132,7 +134,7 @@ class Auth extends BaseConfig
     // you might not want the extra risk associated with this cookie-based
     // solution.
     //
-    public $allowRemembering = false;
+    public $allowRemembering = true;
 
     //--------------------------------------------------------------------
     // Remember Length
@@ -249,6 +251,4 @@ class Auth extends BaseConfig
     // in seconds.
     //
     public $resetTime = 3600;
-
-
 }
