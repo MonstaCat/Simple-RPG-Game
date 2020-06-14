@@ -35,10 +35,6 @@ class ComposerStaticInit47a9cbc2cc1966b8fb04e2fe621f74ba
             'Psr\\Log\\' => 8,
             'Prophecy\\' => 9,
         ),
-        'M' => 
-        array (
-            'Myth\\Auth\\' => 10,
-        ),
         'L' => 
         array (
             'Laminas\\ZendFrameworkBridge\\' => 28,
@@ -85,10 +81,6 @@ class ComposerStaticInit47a9cbc2cc1966b8fb04e2fe621f74ba
         'Prophecy\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy',
-        ),
-        'Myth\\Auth\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/myth/auth/src',
         ),
         'Laminas\\ZendFrameworkBridge\\' => 
         array (
