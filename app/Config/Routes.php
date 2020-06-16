@@ -32,9 +32,10 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
-$routes->group('', ['filter' => 'login'], function ($routes) {
-	$routes->get('home', 'Home::home');
-});
+$routes->get('/home', 'PlayerController::index');
+$routes->match(['get', 'post'], '/login', 'Auth::index');
+$routes->match(['get', 'post'], '/register', 'Auth::UserRegister');
+$routes->get('/logout', 'Auth::UserLogout');
 
 /**
  * --------------------------------------------------------------------

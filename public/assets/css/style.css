@@ -1,0 +1,19 @@
+body {
+	background-color: #ffffff;
+}
+
+.errors li {
+	list-style: none;
+	width: 100%;
+	text-align: center;
+}
+
+.errors ul {
+	padding-left: 0;
+	margin-bottom: 0;
+}
+
+.navbar-dark .navbar-nav .active > .nav-link {
+	text-decoration: underline;
+	text-decoration-style: dashed;
+}

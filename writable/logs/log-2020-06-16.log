@@ -1,0 +1,441 @@
+CRITICAL - 2020-06-16 07:59:02 --> No connection could be made because the target machine actively refused it.
+
+#0 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Database\BaseConnection.php(377): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1845): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Validation\Rules.php(234): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Validation\Validation.php(294): CodeIgniter\Validation\Rules->is_unique('asda', 'username', Array, NULL)
+#5 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Validation\Validation.php(189): CodeIgniter\Validation\Validation->processRules('username', 'username', 'asda', Array, Array)
+#6 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Controller.php(219): CodeIgniter\Validation\Validation->run()
+#7 C:\xampp\htdocs\rpg\app\Controllers\Auth.php(80): CodeIgniter\Controller->validate(Array)
+#8 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(914): App\Controllers\Auth->UserLogin()
+#9 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#10 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\rpg\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2020-06-16 07:59:03 --> Uncaught ErrorException: print_r(): Property access is not allowed yet in C:\xampp\htdocs\rpg\app\Views\errors\html\error_exception.php:100
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r(): Prop...', 'C:\\xampp\\htdocs...', 100, Array)
+#1 C:\xampp\htdocs\rpg\app\Views\errors\html\error_exception.php(100): print_r(Object(App\Controllers\Auth), true)
+#2 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Debug\Exceptions.php(299): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Debug\Exceptions.php(172): CodeIgniter\Debug\Exceptions->render(Object(mysqli_sql_exception), 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-06-16 07:59:36 --> No connection could be made because the target machine actively refused it.
+
+#0 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Database\BaseConnection.php(377): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1845): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Validation\Rules.php(234): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Validation\Validation.php(294): CodeIgniter\Validation\Rules->is_unique('asdsad', 'username', Array, NULL)
+#5 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Validation\Validation.php(189): CodeIgniter\Validation\Validation->processRules('username', 'username', 'asdsad', Array, Array)
+#6 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Controller.php(219): CodeIgniter\Validation\Validation->run()
+#7 C:\xampp\htdocs\rpg\app\Controllers\Auth.php(80): CodeIgniter\Controller->validate(Array)
+#8 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(914): App\Controllers\Auth->UserLogin()
+#9 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#10 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\rpg\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2020-06-16 07:59:37 --> Uncaught ErrorException: print_r(): Property access is not allowed yet in C:\xampp\htdocs\rpg\app\Views\errors\html\error_exception.php:100
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r(): Prop...', 'C:\\xampp\\htdocs...', 100, Array)
+#1 C:\xampp\htdocs\rpg\app\Views\errors\html\error_exception.php(100): print_r(Object(App\Controllers\Auth), true)
+#2 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Debug\Exceptions.php(299): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Debug\Exceptions.php(172): CodeIgniter\Debug\Exceptions->render(Object(mysqli_sql_exception), 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-06-16 08:00:23 --> No connection could be made because the target machine actively refused it.
+
+#0 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Database\BaseConnection.php(377): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1845): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Validation\Rules.php(234): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Validation\Validation.php(294): CodeIgniter\Validation\Rules->is_unique('asdad', 'username', Array, NULL)
+#5 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Validation\Validation.php(189): CodeIgniter\Validation\Validation->processRules('username', 'username', 'asdad', Array, Array)
+#6 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Controller.php(219): CodeIgniter\Validation\Validation->run()
+#7 C:\xampp\htdocs\rpg\app\Controllers\Auth.php(80): CodeIgniter\Controller->validate(Array)
+#8 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(914): App\Controllers\Auth->UserLogin()
+#9 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#10 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\rpg\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2020-06-16 08:00:23 --> Uncaught ErrorException: print_r(): Property access is not allowed yet in C:\xampp\htdocs\rpg\app\Views\errors\html\error_exception.php:100
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r(): Prop...', 'C:\\xampp\\htdocs...', 100, Array)
+#1 C:\xampp\htdocs\rpg\app\Views\errors\html\error_exception.php(100): print_r(Object(App\Controllers\Auth), true)
+#2 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Debug\Exceptions.php(299): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Debug\Exceptions.php(172): CodeIgniter\Debug\Exceptions->render(Object(mysqli_sql_exception), 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-06-16 08:01:51 --> No connection could be made because the target machine actively refused it.
+
+#0 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Database\BaseConnection.php(377): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1845): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Validation\Rules.php(234): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Validation\Validation.php(294): CodeIgniter\Validation\Rules->is_unique('asdad', 'username', Array, NULL)
+#5 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Validation\Validation.php(189): CodeIgniter\Validation\Validation->processRules('username', 'username', 'asdad', Array, Array)
+#6 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Controller.php(219): CodeIgniter\Validation\Validation->run()
+#7 C:\xampp\htdocs\rpg\app\Controllers\Auth.php(80): CodeIgniter\Controller->validate(Array, Array)
+#8 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(914): App\Controllers\Auth->UserLogin()
+#9 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#10 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\rpg\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2020-06-16 08:01:52 --> Uncaught ErrorException: print_r(): Property access is not allowed yet in C:\xampp\htdocs\rpg\app\Views\errors\html\error_exception.php:100
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r(): Prop...', 'C:\\xampp\\htdocs...', 100, Array)
+#1 C:\xampp\htdocs\rpg\app\Views\errors\html\error_exception.php(100): print_r(Object(App\Controllers\Auth), true)
+#2 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Debug\Exceptions.php(299): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Debug\Exceptions.php(172): CodeIgniter\Debug\Exceptions->render(Object(mysqli_sql_exception), 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-06-16 08:02:02 --> No connection could be made because the target machine actively refused it.
+
+#0 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Database\BaseConnection.php(377): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1845): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Validation\Rules.php(234): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Validation\Validation.php(294): CodeIgniter\Validation\Rules->is_unique('asdasd', 'username', Array, NULL)
+#5 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Validation\Validation.php(189): CodeIgniter\Validation\Validation->processRules('username', 'username', 'asdasd', Array, Array)
+#6 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Controller.php(219): CodeIgniter\Validation\Validation->run()
+#7 C:\xampp\htdocs\rpg\app\Controllers\Auth.php(80): CodeIgniter\Controller->validate(Array, Array)
+#8 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(914): App\Controllers\Auth->UserLogin()
+#9 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#10 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\rpg\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2020-06-16 08:02:02 --> Uncaught ErrorException: print_r(): Property access is not allowed yet in C:\xampp\htdocs\rpg\app\Views\errors\html\error_exception.php:100
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r(): Prop...', 'C:\\xampp\\htdocs...', 100, Array)
+#1 C:\xampp\htdocs\rpg\app\Views\errors\html\error_exception.php(100): print_r(Object(App\Controllers\Auth), true)
+#2 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Debug\Exceptions.php(299): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Debug\Exceptions.php(172): CodeIgniter\Debug\Exceptions->render(Object(mysqli_sql_exception), 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-06-16 08:08:10 --> No connection could be made because the target machine actively refused it.
+
+#0 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Database\BaseConnection.php(377): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1845): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Validation\Rules.php(234): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Validation\Validation.php(294): CodeIgniter\Validation\Rules->is_unique('asdasd', 'username', Array, NULL)
+#5 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Validation\Validation.php(189): CodeIgniter\Validation\Validation->processRules('username', 'username', 'asdasd', Array, Array)
+#6 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Controller.php(219): CodeIgniter\Validation\Validation->run()
+#7 C:\xampp\htdocs\rpg\app\Controllers\Auth.php(80): CodeIgniter\Controller->validate(Array, Array)
+#8 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(914): App\Controllers\Auth->UserLogin()
+#9 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#10 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\rpg\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2020-06-16 08:08:10 --> Uncaught ErrorException: print_r(): Property access is not allowed yet in C:\xampp\htdocs\rpg\app\Views\errors\html\error_exception.php:100
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r(): Prop...', 'C:\\xampp\\htdocs...', 100, Array)
+#1 C:\xampp\htdocs\rpg\app\Views\errors\html\error_exception.php(100): print_r(Object(App\Controllers\Auth), true)
+#2 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Debug\Exceptions.php(299): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Debug\Exceptions.php(172): CodeIgniter\Debug\Exceptions->render(Object(mysqli_sql_exception), 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-06-16 08:08:28 --> No connection could be made because the target machine actively refused it.
+
+#0 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Database\BaseConnection.php(377): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1845): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Validation\Rules.php(234): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Validation\Validation.php(294): CodeIgniter\Validation\Rules->is_unique('asdasd', 'username', Array, NULL)
+#5 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Validation\Validation.php(189): CodeIgniter\Validation\Validation->processRules('username', 'username', 'asdasd', Array, Array)
+#6 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Controller.php(219): CodeIgniter\Validation\Validation->run()
+#7 C:\xampp\htdocs\rpg\app\Controllers\Auth.php(80): CodeIgniter\Controller->validate(Array, Array)
+#8 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(914): App\Controllers\Auth->UserLogin()
+#9 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#10 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\rpg\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2020-06-16 08:08:28 --> Uncaught ErrorException: print_r(): Property access is not allowed yet in C:\xampp\htdocs\rpg\app\Views\errors\html\error_exception.php:100
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r(): Prop...', 'C:\\xampp\\htdocs...', 100, Array)
+#1 C:\xampp\htdocs\rpg\app\Views\errors\html\error_exception.php(100): print_r(Object(App\Controllers\Auth), true)
+#2 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Debug\Exceptions.php(299): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Debug\Exceptions.php(172): CodeIgniter\Debug\Exceptions->render(Object(mysqli_sql_exception), 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-06-16 08:18:00 --> No connection could be made because the target machine actively refused it.
+
+#0 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Database\BaseConnection.php(377): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1845): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Model.php(489): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\rpg\app\Validation\UserRules.php(12): CodeIgniter\Model->first()
+#5 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Validation\Validation.php(294): App\Validation\UserRules->validateUser('Pa$$w0rd!', 'username, passw...', Array, NULL)
+#6 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Validation\Validation.php(189): CodeIgniter\Validation\Validation->processRules('password', 'password', 'Pa$$w0rd!', Array, Array)
+#7 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Controller.php(219): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\rpg\app\Controllers\Auth.php(80): CodeIgniter\Controller->validate(Array, Array)
+#9 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(914): App\Controllers\Auth->UserLogin()
+#10 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#11 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\rpg\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2020-06-16 08:18:00 --> Uncaught ErrorException: print_r(): Property access is not allowed yet in C:\xampp\htdocs\rpg\app\Views\errors\html\error_exception.php:100
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r(): Prop...', 'C:\\xampp\\htdocs...', 100, Array)
+#1 C:\xampp\htdocs\rpg\app\Views\errors\html\error_exception.php(100): print_r(Object(App\Controllers\Auth), true)
+#2 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Debug\Exceptions.php(299): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Debug\Exceptions.php(172): CodeIgniter\Debug\Exceptions->render(Object(mysqli_sql_exception), 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-06-16 09:51:00 --> No connection could be made because the target machine actively refused it.
+
+#0 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Database\BaseConnection.php(377): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1845): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Model.php(489): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\rpg\app\Validation\UserRules.php(12): CodeIgniter\Model->first()
+#5 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Validation\Validation.php(294): App\Validation\UserRules->validateUser('Pa$$w0rd!', 'username,passwo...', Array, NULL)
+#6 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Validation\Validation.php(189): CodeIgniter\Validation\Validation->processRules('password', 'password', 'Pa$$w0rd!', Array, Array)
+#7 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Controller.php(219): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\rpg\app\Controllers\Auth.php(112): CodeIgniter\Controller->validate(Array, Array)
+#9 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(914): App\Controllers\Auth->UserLogin()
+#10 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#11 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\rpg\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2020-06-16 09:51:00 --> Uncaught ErrorException: print_r(): Property access is not allowed yet in C:\xampp\htdocs\rpg\app\Views\errors\html\error_exception.php:100
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r(): Prop...', 'C:\\xampp\\htdocs...', 100, Array)
+#1 C:\xampp\htdocs\rpg\app\Views\errors\html\error_exception.php(100): print_r(Object(App\Controllers\Auth), true)
+#2 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Debug\Exceptions.php(299): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Debug\Exceptions.php(172): CodeIgniter\Debug\Exceptions->render(Object(mysqli_sql_exception), 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-06-16 09:51:14 --> No connection could be made because the target machine actively refused it.
+
+#0 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Database\BaseConnection.php(377): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1845): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Model.php(489): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\rpg\app\Validation\UserRules.php(12): CodeIgniter\Model->first()
+#5 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Validation\Validation.php(294): App\Validation\UserRules->validateUser('Pa$$w0rd!', 'username,passwo...', Array, NULL)
+#6 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Validation\Validation.php(189): CodeIgniter\Validation\Validation->processRules('password', 'password', 'Pa$$w0rd!', Array, Array)
+#7 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Controller.php(219): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\rpg\app\Controllers\Auth.php(112): CodeIgniter\Controller->validate(Array, Array)
+#9 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(914): App\Controllers\Auth->UserLogin()
+#10 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#11 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\rpg\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2020-06-16 09:51:14 --> Uncaught ErrorException: print_r(): Property access is not allowed yet in C:\xampp\htdocs\rpg\app\Views\errors\html\error_exception.php:100
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r(): Prop...', 'C:\\xampp\\htdocs...', 100, Array)
+#1 C:\xampp\htdocs\rpg\app\Views\errors\html\error_exception.php(100): print_r(Object(App\Controllers\Auth), true)
+#2 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Debug\Exceptions.php(299): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Debug\Exceptions.php(172): CodeIgniter\Debug\Exceptions->render(Object(mysqli_sql_exception), 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-06-16 09:51:28 --> No connection could be made because the target machine actively refused it.
+
+#0 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Database\BaseConnection.php(377): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1845): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Model.php(489): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\rpg\app\Validation\UserRules.php(12): CodeIgniter\Model->first()
+#5 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Validation\Validation.php(294): App\Validation\UserRules->validateUser('asdadasdas', 'username,passwo...', Array, NULL)
+#6 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Validation\Validation.php(189): CodeIgniter\Validation\Validation->processRules('password', 'password', 'asdadasdas', Array, Array)
+#7 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Controller.php(219): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\rpg\app\Controllers\Auth.php(112): CodeIgniter\Controller->validate(Array, Array)
+#9 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(914): App\Controllers\Auth->UserLogin()
+#10 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#11 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\rpg\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2020-06-16 09:51:28 --> Uncaught ErrorException: print_r(): Property access is not allowed yet in C:\xampp\htdocs\rpg\app\Views\errors\html\error_exception.php:100
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r(): Prop...', 'C:\\xampp\\htdocs...', 100, Array)
+#1 C:\xampp\htdocs\rpg\app\Views\errors\html\error_exception.php(100): print_r(Object(App\Controllers\Auth), true)
+#2 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Debug\Exceptions.php(299): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Debug\Exceptions.php(172): CodeIgniter\Debug\Exceptions->render(Object(mysqli_sql_exception), 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-06-16 09:53:21 --> No connection could be made because the target machine actively refused it.
+
+#0 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Database\BaseConnection.php(377): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1845): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Model.php(489): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\rpg\app\Validation\UserRules.php(12): CodeIgniter\Model->first()
+#5 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Validation\Validation.php(294): App\Validation\UserRules->validateUser('Pa$$w0rd!', 'username,passwo...', Array, NULL)
+#6 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Validation\Validation.php(189): CodeIgniter\Validation\Validation->processRules('password', 'password', 'Pa$$w0rd!', Array, Array)
+#7 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Controller.php(219): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\rpg\app\Controllers\Auth.php(112): CodeIgniter\Controller->validate(Array, Array)
+#9 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(914): App\Controllers\Auth->UserLogin()
+#10 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#11 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\rpg\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2020-06-16 09:53:21 --> Uncaught ErrorException: print_r(): Property access is not allowed yet in C:\xampp\htdocs\rpg\app\Views\errors\html\error_exception.php:100
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r(): Prop...', 'C:\\xampp\\htdocs...', 100, Array)
+#1 C:\xampp\htdocs\rpg\app\Views\errors\html\error_exception.php(100): print_r(Object(App\Controllers\Auth), true)
+#2 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Debug\Exceptions.php(299): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Debug\Exceptions.php(172): CodeIgniter\Debug\Exceptions->render(Object(mysqli_sql_exception), 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-06-16 09:54:44 --> No connection could be made because the target machine actively refused it.
+
+#0 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Database\BaseConnection.php(377): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1845): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Model.php(489): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\rpg\app\Validation\UserRules.php(12): CodeIgniter\Model->first()
+#5 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Validation\Validation.php(294): App\Validation\UserRules->validateUser('Pa$$w0rd!', 'username,passwo...', Array, NULL)
+#6 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Validation\Validation.php(189): CodeIgniter\Validation\Validation->processRules('password', 'password', 'Pa$$w0rd!', Array, Array)
+#7 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Controller.php(219): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\rpg\app\Controllers\Auth.php(80): CodeIgniter\Controller->validate(Array, Array)
+#9 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(914): App\Controllers\Auth->UserLogin()
+#10 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#11 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\rpg\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2020-06-16 09:54:44 --> Uncaught ErrorException: print_r(): Property access is not allowed yet in C:\xampp\htdocs\rpg\app\Views\errors\html\error_exception.php:100
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r(): Prop...', 'C:\\xampp\\htdocs...', 100, Array)
+#1 C:\xampp\htdocs\rpg\app\Views\errors\html\error_exception.php(100): print_r(Object(App\Controllers\Auth), true)
+#2 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Debug\Exceptions.php(299): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Debug\Exceptions.php(172): CodeIgniter\Debug\Exceptions->render(Object(mysqli_sql_exception), 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-06-16 10:31:37 --> Undefined variable: title
+#0 C:\xampp\htdocs\rpg\app\Views\templates\header.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 9, Array)
+#1 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Common.php(1087): CodeIgniter\View\View->render('templates/heade...', Array, true)
+#3 C:\xampp\htdocs\rpg\app\Controllers\Auth.php(92): view('templates/heade...', Array)
+#4 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(914): App\Controllers\Auth->UserLogin()
+#5 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#6 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\rpg\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2020-06-16 10:32:10 --> syntax error, unexpected '?>'
+#0 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Common.php(1087): CodeIgniter\View\View->render('templates/heade...', Array, true)
+#1 C:\xampp\htdocs\rpg\app\Controllers\Auth.php(92): view('templates/heade...', Array)
+#2 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(914): App\Controllers\Auth->UserLogin()
+#3 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#4 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\rpg\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2020-06-16 13:33:21 --> syntax error, unexpected '}', expecting variable (T_VARIABLE) or '{' or '$'
+#0 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(865): class_exists('\\App\\Controller...', true)
+#5 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(390): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\rpg\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2020-06-16 13:58:22 --> Call to undefined method App\Models\UserModel::model
+#0 C:\xampp\htdocs\rpg\app\Controllers\Auth.php(37): CodeIgniter\Model->__call('model', Array)
+#1 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(914): App\Controllers\Auth->index()
+#2 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\rpg\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2020-06-16 14:01:25 --> Call to undefined method App\Models\UserModel::model
+#0 C:\xampp\htdocs\rpg\app\Controllers\Auth.php(32): CodeIgniter\Model->__call('model', Array)
+#1 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(914): App\Controllers\Auth->index()
+#2 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\rpg\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2020-06-16 14:02:57 --> Call to undefined method App\Models\UserModel::model
+#0 C:\xampp\htdocs\rpg\app\Controllers\Auth.php(32): CodeIgniter\Model->__call('model', Array)
+#1 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(914): App\Controllers\Auth->index()
+#2 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\rpg\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2020-06-16 14:36:43 --> syntax error, unexpected 'if' (T_IF)
+#0 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Common.php(1087): CodeIgniter\View\View->render('templates/heade...', Array, true)
+#1 C:\xampp\htdocs\rpg\app\Controllers\PlayerController.php(13): view('templates/heade...', Array)
+#2 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(914): App\Controllers\PlayerController->index()
+#3 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlayerController))
+#4 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\rpg\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2020-06-16 14:58:09 --> syntax error, unexpected 'session' (T_STRING), expecting ',' or ';'
+#0 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Common.php(1087): CodeIgniter\View\View->render('player.php', Array, true)
+#1 C:\xampp\htdocs\rpg\app\Controllers\PlayerController.php(14): view('player.php')
+#2 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(914): App\Controllers\PlayerController->index()
+#3 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlayerController))
+#4 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\rpg\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2020-06-16 15:30:30 --> Undefined variable: user
+#0 C:\xampp\htdocs\rpg\app\Views\player.php(4): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 4, Array)
+#1 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Common.php(1087): CodeIgniter\View\View->render('player.php', Array, true)
+#3 C:\xampp\htdocs\rpg\app\Controllers\PlayerController.php(14): view('player.php')
+#4 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(914): App\Controllers\PlayerController->index()
+#5 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlayerController))
+#6 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\rpg\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}
