@@ -4,25 +4,25 @@ namespace App\Controllers;
 
 use App\Models\UserModel;
 
-class PlayerController extends BaseController
+class AdminController extends BaseController
 {
     public function index()
     {
         $data = [
-            'title' => 'RPG | Home'
+            'title' => 'RPG | Admin Home'
         ];
 
         $model = new UserModel();
 
         $data['user'] = $model->where('username', session()->get('username'))->first();
 
-        return view('PlayerHome.php', $data);
+        return view('AdminHome.php', $data);
     }
 
-    public function PlayerProfile()
+    public function AdminProfile()
     {
         $data = [
-            'title' => 'RPG | Player Profile'
+            'title' => 'RPG | Admin Profile'
         ];
 
         $model = new UserModel();
@@ -70,6 +70,6 @@ class PlayerController extends BaseController
 
         $data['user'] = $model->where('username', session()->get('username'))->first();
 
-        return view('PlayerProfile.php', $data);
+        return view('AdminProfile.php', $data);
     }
 }

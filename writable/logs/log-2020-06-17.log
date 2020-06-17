@@ -1,0 +1,23 @@
+CRITICAL - 2020-06-17 01:32:21 --> No connection could be made because the target machine actively refused it.
+
+#0 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Database\BaseConnection.php(377): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1845): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Model.php(489): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\rpg\app\Controllers\PlayerController.php(17): CodeIgniter\Model->first()
+#5 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(914): App\Controllers\PlayerController->index()
+#6 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlayerController))
+#7 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\rpg\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2020-06-17 02:23:12 --> Invalid file: {0}
+#0 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('templates/heade...')
+#1 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Common.php(1087): CodeIgniter\View\View->render('templates/heade...', Array, true)
+#2 C:\xampp\htdocs\rpg\app\Controllers\Auth.php(40): view('templates/heade...', Array)
+#3 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(914): App\Controllers\Auth->index()
+#4 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#5 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\rpg\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#8 {main}

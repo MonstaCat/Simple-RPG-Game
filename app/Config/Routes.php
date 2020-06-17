@@ -33,6 +33,7 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 $routes->get('/home', 'PlayerController::index');
+$routes->get('/admin', 'AdminController::index');
 $routes->match(['get', 'post'], '/profile', 'PlayerController::PlayerProfile');
 $routes->match(['get', 'post'], '/login', 'Auth::index');
 $routes->match(['get', 'post'], '/register', 'Auth::UserRegister');

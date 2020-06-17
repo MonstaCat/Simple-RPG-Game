@@ -33,13 +33,15 @@ class Auth extends BaseController
 
                 $this->setUserSession($user);
 
-                return redirect()->to('/home');
+                if (session()->get('role') == 'player') {
+                    return redirect()->to('/home');
+                } else {
+                    return redirect()->to('/admin');
+                }
             }
         }
 
-        echo view('templates/header.php', $data);
-        echo view('login.php');
-        echo view('templates/footer.php');
+        return view('login.php', $data);
     }
 
     private function setUserSession($user)
@@ -92,9 +94,7 @@ class Auth extends BaseController
             }
         }
 
-        echo view('templates/header.php', $data);
-        echo view('register.php');
-        echo view('templates/footer.php');
+        return view('register.php', $data);
     }
 
     public function UserLogout()
