@@ -49,6 +49,7 @@ class Auth extends BaseController
         $data = [
             'username' => $user['username'],
             'email' => $user['email'],
+            'role' => $user['role'],
             'level' => $user['level'],
             'currentExp' => $user['currentExp'],
             'maxExp' => $user['maxExp'],
