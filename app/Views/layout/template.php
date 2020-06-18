@@ -21,8 +21,8 @@
             <div class="collapse navbar-collapse">
                 <?php if (session()->get('isLoggedIn')) : ?>
                     <ul class="nav navbar-nav mr-auto">
-                        <li class="nav-item <?= ($uri->getSegment(1)) == 'home' ? 'active' : null ?>">
-                            <a class="nav-link" href="/home">Home</a>
+                        <li class="nav-item <?= (($uri->getSegment(1)) == 'home') || (($uri->getSegment(1)) == 'admin') ? 'active' : null ?>">
+                            <a class="nav-link" href="<?= (session()->get('role') == 'Admin') ? '/admin' : '/home' ?>">Home</a>
                         </li>
                         <li class="nav-item <?= ($uri->getSegment(1)) == 'profile' ? 'active' : null ?>">
                             <a class="nav-link" href="/profile">Profile</a>
