@@ -16,13 +16,19 @@
                 </div>
             <?php endif; ?>
             <div class="row">
-                <div class="col-12 col-sm-6">
+                <div class="col-12 col-sm-4">
                     <div class="form-group">
                         <label for="username">Username</label>
                         <input readonly type="text" class="form-control" name="username" id="username" value="<?= set_value('username', $user['username']) ?>" autocomplete="off">
                     </div>
                 </div>
-                <div class="col-12 col-sm-6">
+                <div class="col-12 col-sm-4">
+                    <div class="form-group">
+                        <label for="role">Role</label>
+                        <input readonly type="text" class="form-control" name="role" id="role" value="<?= set_value('role', $user['role']) ?>" autocomplete="off">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4">
                     <div class="form-group">
                         <label for="level">Level</label>
                         <input type="text" class="form-control" name="level" id="level" value="<?= set_value('level', $user['level']) ?>" autocomplete="off">
@@ -105,6 +111,5 @@
             <?= form_close(); ?>
         </div>
     </div>
-</div>
 </div>
 <?= $this->endSection() ?>
