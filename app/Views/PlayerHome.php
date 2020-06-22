@@ -11,7 +11,7 @@
         <div class="col-3">
             <label for="progress">EXP:</label>
             <div class="progress">
-                <div class="progress-bar bg-success" role="progressbar" style="width: <?= $user['currentExp'] ?>%" aria-valuenow="<?= $user['currentExp'] ?>" aria-valuemin="0" aria-valuemax="<?= $user['maxExp'] ?>"><?= $user['currentExp'] ?> / <?= $user['maxExp'] ?></div>
+                <div class="progress-bar bg-success" role="progressbar" style="width: <?= $user['currentExp'] ?>\0025" aria-valuenow="<?= $user['currentExp'] ?>" aria-valuemin="0" data-percentage="100" aria-valuemax="<?= $user['maxExp'] ?>"><?= $user['currentExp'] ?> / <?= $user['maxExp'] ?></div>
             </div>
         </div>
     </div>
@@ -19,7 +19,7 @@
         <div class="col-3 mt-3">
             <label for="progress">HP:</label>
             <div class="progress">
-                <div class="progress-bar bg-danger" role="progressbar" style="width: <?= $user['currentHP'] ?>%" aria-valuenow="<?= $user['currentHP'] ?>" aria-valuemin="0" data-percentage="100" aria-valuemax="<?= $user['maxHP'] ?>"><?= $user['currentHP'] ?> / <?= $user['maxHP'] ?></div>
+                <div class="progress-bar bg-danger" role="progressbar" style="width: <?= $user['currentHP'] ?>\0025" aria-valuenow="<?= $user['currentHP'] ?>" aria-valuemin="0" data-percentage="100" aria-valuemax="<?= $user['maxHP'] ?>"><?= $user['currentHP'] ?> / <?= $user['maxHP'] ?></div>
             </div>
         </div>
     </div>
