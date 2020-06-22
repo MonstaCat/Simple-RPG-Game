@@ -21,7 +21,7 @@ class Auth extends BaseController
 
             $errors = [
                 'password' => [
-                    'validateUser' => 'Email or Password don\'t match'
+                    'validateUser' => 'Username or Password don\'t match'
                 ]
             ];
 
@@ -33,7 +33,7 @@ class Auth extends BaseController
 
                 $this->setUserSession($user);
 
-                if (session()->get('role') == 'player') {
+                if (session()->get('role') == 'Player') {
                     return redirect()->to('/home');
                 } else {
                     return redirect()->to('/admin');
@@ -88,7 +88,7 @@ class Auth extends BaseController
                     'email' => $this->request->getVar('email'),
                     'password' => $this->request->getVar('password'),
                 ];
-                $model->save($newData);
+                $model->insert($newData);
 
                 session()->setFlashdata('success', 'Registration Success!');
                 return redirect()->to('/login');
