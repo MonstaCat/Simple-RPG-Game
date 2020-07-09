@@ -36,7 +36,7 @@ $routes->get('/home', 'PlayerController::index');
 $routes->get('/admin', 'AdminController::index');
 
 $routes->match(['get', 'post'], '/admin/add_item', 'AdminController::AddItem');
-$routes->match(['get', 'post'], '/admin/edit_item', 'AdminController::EditItem');
+$routes->match(['get', 'post'], '/admin/edit_item/(:any)', 'AdminController::EditItem/$1');
 $routes->match(['get', 'post'], '/admin/delete_item/(:any)', 'AdminController::DeleteItem/$1');
 $routes->match(['get', 'post'], '/profile', 'PlayerController::PlayerProfile');
 

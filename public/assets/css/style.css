@@ -2,6 +2,14 @@ body {
 	background-color: #ffffff;
 }
 
+.main-wrapper {
+	height: 100vh;
+}
+
+.grid-item {
+	float: left;
+}
+
 .errors li {
 	list-style: none;
 	width: 100%;
@@ -16,4 +24,9 @@ body {
 .navbar-dark .navbar-nav .active > .nav-link {
 	text-decoration: underline;
 	text-decoration-style: dashed;
+}
+
+.tooltip {
+	font-family: Tahoma, sans-serif !important;
+	font-size: 0.75rem;
 }

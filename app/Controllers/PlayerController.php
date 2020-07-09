@@ -15,6 +15,8 @@ class PlayerController extends BaseController
         $model = new UserModel();
 
         $data['user'] = $model->where('username', session()->get('username'))->first();
+        $data['LevelLeaderboard'] = $model->orderBy('level', 'DESC')->findAll(5);
+        $data['CoinLeaderboard'] = $model->orderBy('coins', 'DESC')->findAll(5);
 
         return view('PlayerHome.php', $data);
     }

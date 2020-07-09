@@ -11,7 +11,7 @@
 
 <body>
     <?php $uri = service('uri'); ?>
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary <?= (session()->get('role')) == 'Player' || session()->get('isLoggedIn') == null ? 'd-none' : null ?>">
         <div class="container">
             <a class="navbar-brand" href="/login">RPG</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,13 +46,14 @@
             </div>
         </div>
     </nav>
-    <div class="container mb-5 pb-5"></div>
+    <div class="container <?= (session()->get('role')) == 'Admin' ? 'mb-5 pb-5' : null ?>"></div>
 
     <?= $this->renderSection('content') ?>
 
     <script src="/assets/js/jquery-3.5.1.slim.min.js"></script>
     <script src="/assets/js/popper.min.js"></script>
     <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/masonry.pkgd.min.js"></script>
     <script src="/assets/js/custom.js"></script>
 
 </body>

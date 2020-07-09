@@ -61,10 +61,10 @@ class AdminController extends BaseController
         return view('AddItem.php', $data);
     }
 
-    public function EditItem()
+    public function EditItem($id)
     {
         $model = new ItemModel();
-        $item = $model->where('idItem')->first();
+        $item = $model->where('idItem', $id)->first();
 
         // Get all categories
         $category = $model->findColumn('category');
@@ -72,7 +72,8 @@ class AdminController extends BaseController
         $data = [
             'title' => 'RPG | Edit Item',
             'item' => $item,
-            'category' => $category
+            'category' => $category,
+            'idItem' => $item['idItem']
         ];
 
 

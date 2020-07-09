@@ -5,3 +5,8 @@ $(".progress-bar").each(function () {
 	var siz = ((now - min) * 100) / (max - min);
 	$(this).css("width", siz + "%");
 });
+
+// Tooltip for exp bar
+$(document).ready(function () {
+	$("#exp-bar").tooltip();
+});

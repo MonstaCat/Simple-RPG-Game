@@ -2,8 +2,8 @@
 
 <?= $this->section('content') ?>
 <div class="container">
-    <div class="row">
-        <div class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3 pt-3 pb-3 bg-white">
+    <div class="row main-wrapper">
+        <div class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3 pt-3 pb-3 bg-white my-auto">
             <?= form_open('/register'); ?>
             <h3>Register</h3>
             <hr>
