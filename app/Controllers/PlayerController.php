@@ -3,6 +3,8 @@
 namespace App\Controllers;
 
 use App\Models\UserModel;
+use App\Models\LocationModel;
+use App\Models\MobModel;
 
 class PlayerController extends BaseController
 {
@@ -12,11 +14,13 @@ class PlayerController extends BaseController
             'title' => 'RPG | Home'
         ];
 
-        $model = new UserModel();
+        $UserModel = new UserModel();
+        $LocationModel = new LocationModel();
 
-        $data['user'] = $model->where('username', session()->get('username'))->first();
-        $data['LevelLeaderboard'] = $model->orderBy('level', 'DESC')->findAll(5);
-        $data['CoinLeaderboard'] = $model->orderBy('coins', 'DESC')->findAll(5);
+        $data['user'] = $UserModel->where('username', session()->get('username'))->first();
+        $data['LevelLeaderboard'] = $UserModel->orderBy('level', 'DESC')->findAll(5);
+        $data['CoinLeaderboard'] = $UserModel->orderBy('coins', 'DESC')->findAll(5);
+        $data['location'] = $LocationModel->findAll();
 
         return view('PlayerHome.php', $data);
     }
@@ -73,5 +77,17 @@ class PlayerController extends BaseController
         $data['user'] = $model->where('username', session()->get('username'))->first();
 
         return view('PlayerProfile.php', $data);
+    }
+
+    public function findMob($id)
+    {
+        $data = [
+            'title' => 'RPG | Home'
+        ];
+
+        $MobModel = new MobModel();
+        $data['mob'] = $MobModel->where('idLocation', $id)->findAll();
+
+        return view('ajax/MobSelect.php', $data);
     }
 }

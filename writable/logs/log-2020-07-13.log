@@ -1,0 +1,58 @@
+CRITICAL - 2020-07-13 01:08:23 --> Class 'App\Controllers\LocationModel' not found
+#0 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(914): App\Controllers\PlayerController->index()
+#1 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlayerController))
+#2 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\rpg\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-07-13 01:08:55 --> No connection could be made because the target machine actively refused it.
+
+#0 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Database\BaseConnection.php(377): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1845): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Model.php(489): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\rpg\app\Validation\UserRules.php(12): CodeIgniter\Model->first()
+#5 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Validation\Validation.php(294): App\Validation\UserRules->validateUser('07082001', 'username,passwo...', Array, NULL)
+#6 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Validation\Validation.php(189): CodeIgniter\Validation\Validation->processRules('password', 'password', '07082001', Array, Array)
+#7 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Controller.php(219): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\rpg\app\Controllers\Auth.php(28): CodeIgniter\Controller->validate(Array, Array)
+#9 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(914): App\Controllers\Auth->index()
+#10 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#11 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\rpg\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2020-07-13 03:07:16 --> syntax error, unexpected ':'
+#0 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Common.php(1087): CodeIgniter\View\View->render('PlayerHome.php', Array, true)
+#1 C:\xampp\htdocs\rpg\app\Controllers\PlayerController.php(27): view('PlayerHome.php', Array)
+#2 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(914): App\Controllers\PlayerController->index()
+#3 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlayerController))
+#4 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\rpg\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2020-07-13 03:08:14 --> Undefined variable: i
+#0 C:\xampp\htdocs\rpg\app\Views\PlayerHome.php(114): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 114, Array)
+#1 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Common.php(1087): CodeIgniter\View\View->render('PlayerHome.php', Array, true)
+#3 C:\xampp\htdocs\rpg\app\Controllers\PlayerController.php(27): view('PlayerHome.php', Array)
+#4 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(914): App\Controllers\PlayerController->index()
+#5 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlayerController))
+#6 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\rpg\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2020-07-13 03:59:09 --> Too few arguments to function App\Controllers\PlayerController::findMob(), 0 passed in C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php on line 914 and exactly 1 expected
+#0 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(914): App\Controllers\PlayerController->findMob()
+#1 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlayerController))
+#2 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\rpg\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-07-13 03:59:13 --> Too few arguments to function App\Controllers\PlayerController::findMob(), 0 passed in C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php on line 914 and exactly 1 expected
+#0 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(914): App\Controllers\PlayerController->findMob()
+#1 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlayerController))
+#2 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\rpg\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}

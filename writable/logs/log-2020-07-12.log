@@ -1,0 +1,35 @@
+CRITICAL - 2020-07-12 02:45:00 --> Class 'App\Controllers\LocationModel' not found
+#0 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(914): App\Controllers\PlayerController->index()
+#1 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlayerController))
+#2 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\rpg\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-07-12 02:46:18 --> Class 'App\Controllers\LocationModel' not found
+#0 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(914): App\Controllers\PlayerController->index()
+#1 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlayerController))
+#2 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\rpg\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-07-12 02:46:28 --> Class 'App\Controllers\LocationModel' not found
+#0 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(914): App\Controllers\PlayerController->index()
+#1 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlayerController))
+#2 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\rpg\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-07-12 02:49:07 --> Class 'App\Controllers\LocationModel' not found
+#0 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(914): App\Controllers\PlayerController->index()
+#1 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlayerController))
+#2 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\rpg\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-07-12 02:55:30 --> Class 'App\Controllers\LocationModel' not found
+#0 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(914): App\Controllers\PlayerController->index()
+#1 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlayerController))
+#2 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\rpg\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}

@@ -10,3 +10,21 @@ $(".progress-bar").each(function () {
 $(document).ready(function () {
 	$("#exp-bar").tooltip();
 });
+
+// Ajax for battle
+var locationSelect = document.getElementById("locationSelect");
+var mobSelectE = document.getElementById("mobSelect");
+
+function locSelect() {
+	if (locationSelect.value != "default") {
+		mobSelectE.style.display = "block";
+		$.ajax({
+			url: "/PlayerController/findMob/" + locationSelect.value,
+			success: function (data) {
+				$("#mobSelect").html(data);
+			}
+		});
+	} else {
+		mobSelectE.style.display = "none";
+	}
+}
