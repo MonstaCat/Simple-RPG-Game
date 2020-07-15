@@ -32,7 +32,7 @@ function locSelect() {
 // Ajax for inventory
 function dblclick_equipped() {
 	$.ajax({
-		url: "/PlayerController/FindInventory/ucok",
+		url: "/PlayerController/FindInventory/",
 		success: function (data) {
 			$("#InventoryListAjax").html(data);
 
@@ -44,9 +44,18 @@ function dblclick_equipped() {
 						$("#InventoryListAjax").html(data);
 
 						$.ajax({
-							url: "/PlayerController/FindInventory/ucok",
+							url: "/PlayerController/FindInventory/",
 							success: function (data) {
 								$("#InventoryListAjax").html(data);
+							}
+						});
+
+						// Update atk and def
+						$.ajax({
+							url: "/PlayerController/UpdateAtkDef/",
+							success: function (data) {
+								$("#AtkDefAjax_Info").html(data);
+								$("#AtkDefAjax_Inventory").html(data);
 							}
 						});
 					}
@@ -55,3 +64,44 @@ function dblclick_equipped() {
 		}
 	});
 }
+
+function info_clicked() {
+	// Update atk and def
+	$.ajax({
+		url: "/PlayerController/UpdateAtkDef/",
+		success: function (data) {
+			$("#AtkDefAjax_Info").html(data);
+			$("#AtkDefAjax_Inventory").html(data);
+
+			$.ajax({
+				url: "/PlayerController/EquipmentInfo/",
+				success: function (data) {
+					$("#EquipmentInfo").html(data);
+
+					// Remove element that has null data value in equipment info
+					$(".equipment-info").filter('[data-value="null"]').remove();
+				}
+			});
+		}
+	});
+}
+
+// Update atk and def on first load
+$.ajax({
+	url: "/PlayerController/UpdateAtkDef/",
+	success: function (data) {
+		$("#AtkDefAjax_Info").html(data);
+		$("#AtkDefAjax_Inventory").html(data);
+	}
+});
+
+// Update equipment info on first load
+$.ajax({
+	url: "/PlayerController/EquipmentInfo/",
+	success: function (data) {
+		$("#EquipmentInfo").html(data);
+
+		// Remove element that has null data value in equipment info
+		$(".equipment-info").filter('[data-value="null"]').remove();
+	}
+});

@@ -1,0 +1,9 @@
+<?php foreach ($inventory as $row) : ?>
+    <p class="mb-1 equipment-info" data-value="<?= ($row['category'] == "Head" && $row['isEquipped'] == 'True') ? $row['idInventory'] : "null" ?>">Head: <?= ($row['category'] == "Head" && $row['isEquipped'] == 'True') ? $row['nameItem'] : null ?></p>
+    <p class="mb-1 equipment-info" data-value="<?= ($row['category'] == "Weapon" && $row['isEquipped'] == 'True') ? $row['idInventory'] : "null" ?>">Weapon: <?= ($row['category'] == "Weapon" && $row['isEquipped'] == 'True') ? $row['nameItem'] : null ?></p>
+    <p class="mb-1 equipment-info" data-value="<?= ($row['category'] == "Shield" && $row['isEquipped'] == 'True') ? $row['idInventory'] : "null" ?>">Shield: <?= ($row['category'] == "Shield" && $row['isEquipped'] == 'True') ? $row['nameItem'] : null ?></p>
+    <p class="mb-1 equipment-info" data-value="<?= ($row['category'] == "Body" && $row['isEquipped'] == 'True') ? $row['idInventory'] : "null" ?>">Body: <?= ($row['category'] == "Body" && $row['isEquipped'] == 'True') ? $row['nameItem'] : null ?></p>
+    <p class="mb-1 equipment-info" data-value="<?= ($row['category'] == "Garment" && $row['isEquipped'] == 'True') ? $row['idInventory'] : "null" ?>">Garment: <?= ($row['category'] == "Garment" && $row['isEquipped'] == 'True') ? $row['nameItem'] : null ?></p>
+    <p class="mb-1 equipment-info" data-value="<?= ($row['category'] == "Shoes" && $row['isEquipped'] == 'True') ? $row['idInventory'] : "null" ?>">Shoes: <?= ($row['category'] == "Shoes" && $row['isEquipped'] == 'True') ? $row['nameItem'] : null ?></p>
+    <p class="mb-0 equipment-info" data-value="<?= ($row['category'] == "Accessory" && $row['isEquipped'] == 'True') ? $row['idInventory'] : "null" ?>">Accessory: <?= ($row['category'] == "Accessory" && $row['isEquipped'] == 'True') ? $row['nameItem'] : null ?></p>
+<?php endforeach; ?>

@@ -45,7 +45,7 @@
         </div>
         <ul class="nav nav-pills nav-fill" style="max-width: 20rem;">
             <li class="nav-item">
-                <a class="nav-link active" data-toggle="tab" href="#info">Info</a>
+                <a class="nav-link active" data-toggle="tab" href="#info" onclick="info_clicked()">Info</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" data-toggle="tab" href="#inventory" onclick="dblclick_equipped()">Inventory</a>
@@ -57,43 +57,13 @@
         <div id="myTabContent" class="tab-content mt-1" style="max-width: 20rem;">
             <div class="tab-pane fade card bg-light active show" id="info">
                 <div class="card-body">
-                    <div class="card bg-info">
-                        <div class="card-body p-0">
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <p class="text-light align-text-bottom text-center my-auto">ATK: <?= $user['atk'] ?></p>
-                                </div>
-                                <div class="col-sm-6">
-                                    <p class="text-light text-center my-auto">DEF: <?= $user['def'] ?></p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <p class="mb-1 mt-3">Head: </p>
-                    <p class="mb-1">Weapon: </p>
-                    <p class="mb-1">Shield: </p>
-                    <p class="mb-1">Body: </p>
-                    <p class="mb-1">Garment: </p>
-                    <p class="mb-1">Shoes: </p>
-                    <p class="mb-0">Accessory: </p>
+                    <div id="AtkDefAjax_Info"></div>
+                    <div id="EquipmentInfo"></div>
                 </div>
             </div>
             <div class="tab-pane fade card bg-light" id="inventory">
                 <div class="card-body">
-                    <div class="card bg-info mb-3">
-                        <div class="card-body p-0">
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <p class="text-light align-text-bottom text-center my-auto">ATK: <?= $user['atk'] ?></p>
-                                </div>
-                                <div class="col-sm-6">
-                                    <p class="text-light text-center my-auto">DEF: <?= $user['def'] ?></p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
+                    <div id="AtkDefAjax_Inventory"></div>
                     <div id="InventoryListAjax"></div>
                 </div>
             </div>

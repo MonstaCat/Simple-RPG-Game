@@ -97,7 +97,7 @@ class PlayerController extends BaseController
         return view('ajax/MobSelect.php', $data);
     }
 
-    public function FindInventory($id)
+    public function FindInventory()
     {
         $data = [
             'title' => 'RPG | Home'
@@ -107,6 +107,30 @@ class PlayerController extends BaseController
         $data['inventory'] = $InventoryModel->InventoryList();
 
         return view('ajax/InventoryList.php', $data);
+    }
+
+    public function EquipmentInfo()
+    {
+        $data = [
+            'title' => 'RPG | Home'
+        ];
+
+        $InventoryModel = new InventoryModel();
+        $data['inventory'] = $InventoryModel->EquipmentInfo();
+
+        return view('ajax/EquipmentInfo.php', $data);
+    }
+
+    public function UpdateAtkDef()
+    {
+        $data = [
+            'title' => 'RPG | Home'
+        ];
+
+        $InventoryModel = new InventoryModel();
+        $data['SumAtkDef'] = $InventoryModel->SumAtkDef();
+
+        return view('ajax/AtkDef.php', $data);
     }
 
     public function EquippedItem($id)
@@ -131,6 +155,8 @@ class PlayerController extends BaseController
         ];
 
         $InventoryModel->save($saveData);
+
+        $data['SumAtkDef'] = $InventoryModel->SumAtkDef();
 
         return view('ajax/InventoryList.php', $data);
     }
