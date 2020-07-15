@@ -32,9 +32,10 @@ class AdminController extends BaseController
 
         if ($this->request->getMethod() == 'post') {
             $rules = [
-                'idItem' => 'required|max_length[30]|is_unique[item.idItem]|alpha_numeric',
-                'nameItem' => 'required|max_length[50]|is_unique[item.nameItem]|alpha_numeric_space',
+                'nameItem' => 'required|max_length[50]|is_unique[item.nameItem]',
                 'category' => 'required',
+                'atk' => 'required|decimal',
+                'def' => 'required|decimal',
                 'basePrice' => 'required|decimal',
                 'sellPrice' => 'required|decimal',
             ];
@@ -43,11 +44,14 @@ class AdminController extends BaseController
                 $data['validation'] = $this->validator;
             } else {
                 $model = new ItemModel();
+                $rand = "ITEM-" . random_string('alnum', 10);
 
                 $newData = [
-                    'idItem' => $this->request->getVar('idItem'),
+                    'idItem' => $rand,
                     'nameItem' => $this->request->getVar('nameItem'),
                     'category' => $this->request->getVar('category'),
+                    'atk' => $this->request->getVar('atk'),
+                    'def' => $this->request->getVar('def'),
                     'basePrice' => $this->request->getVar('basePrice'),
                     'sellPrice' => $this->request->getVar('sellPrice'),
                 ];
@@ -79,8 +83,7 @@ class AdminController extends BaseController
 
         if ($this->request->getMethod() == 'post') {
             $rules = [
-                'idItem' => 'required|max_length[30]|alpha_numeric',
-                'nameItem' => 'required|max_length[50]|alpha_numeric_space',
+                'nameItem' => 'required|max_length[50]',
                 'category' => 'required',
                 'basePrice' => 'required|decimal',
                 'sellPrice' => 'required|decimal',

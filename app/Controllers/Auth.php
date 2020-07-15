@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Models\UserModel;
+use App\Models\InventoryModel;
 
 class Auth extends BaseController
 {
@@ -81,14 +82,16 @@ class Auth extends BaseController
             if (!$this->validate($rules)) {
                 $data['validation'] = $this->validator;
             } else {
-                $model = new UserModel();
+                $UserModel = new UserModel();
 
                 $newData = [
                     'username' => $this->request->getVar('username'),
                     'email' => $this->request->getVar('email'),
                     'password' => $this->request->getVar('password'),
                 ];
-                $model->insert($newData);
+                $UserModel->insert($newData);
+
+                $this->AddDefaultInventory();
 
                 session()->setFlashdata('success', 'Registration Success!');
                 return redirect()->to('/login');
@@ -96,6 +99,73 @@ class Auth extends BaseController
         }
 
         return view('register.php', $data);
+    }
+
+    public function AddDefaultInventory()
+    {
+        $InventoryModel = new InventoryModel();
+
+        // Tattered Novice Ninja Suit
+        $rand = "INVEN-" . random_string('alnum', 10);
+        $newData = [
+            'idInventory' => $rand,
+            'username' => $this->request->getVar('username'),
+            'idItem' => 'ITEM-CYAsZ46QtP',
+            'qty' => '1'
+        ];
+        $InventoryModel->insert($newData);
+
+        // Novice Slippers
+        $rand = "INVEN-" . random_string('alnum', 10);
+        $newData = [
+            'idInventory' => $rand,
+            'username' => $this->request->getVar('username'),
+            'idItem' => 'ITEM-Okq32lJfPR',
+            'qty' => '1'
+        ];
+        $InventoryModel->insert($newData);
+
+        // Novice False Eggshell
+        $rand = "INVEN-" . random_string('alnum', 10);
+        $newData = [
+            'idInventory' => $rand,
+            'username' => $this->request->getVar('username'),
+            'idItem' => 'ITEM-oNkWXscy1p',
+            'qty' => '1'
+        ];
+        $InventoryModel->insert($newData);
+
+        // Novice Main-Gauche
+        $rand = "INVEN-" . random_string('alnum', 10);
+        $newData = [
+            'idInventory' => $rand,
+            'username' => $this->request->getVar('username'),
+            'idItem' => 'ITEM-uwFgLz05dQ',
+            'qty' => '1'
+        ];
+        $InventoryModel->insert($newData);
+
+        // Novice Guard
+        $rand = "INVEN-" . random_string('alnum', 10);
+        $newData = [
+            'idInventory' => $rand,
+            'username' => $this->request->getVar('username'),
+            'idItem' => 'ITEM-Wb4Yz72ahn',
+            'qty' => '1'
+        ];
+        $InventoryModel->insert($newData);
+
+        // Somber Novice-Hood
+        $rand = "INVEN-" . random_string('alnum', 10);
+        $newData = [
+            'idInventory' => $rand,
+            'username' => $this->request->getVar('username'),
+            'idItem' => 'ITEM-yOBZfD38g1',
+            'qty' => '1'
+        ];
+        $InventoryModel->insert($newData);
+
+        return true;
     }
 
     public function UserLogout()

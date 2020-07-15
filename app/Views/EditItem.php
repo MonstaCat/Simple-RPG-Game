@@ -32,6 +32,20 @@
             <div class="row">
                 <div class="col-12 col-sm-6">
                     <div class="form-group">
+                        <label for="atk">Attack</label>
+                        <input type="number" class="form-control" name="atk" id="atk" value="<?= set_value('atk'), $item['atk'] ?>">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <div class="form-group">
+                        <label for="atk">Defense</label>
+                        <input type="number" class="form-control" name="def" id="def" value="<?= set_value('def'), $item['def'] ?>">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-6">
+                    <div class="form-group">
                         <label for="basePrice">Base Price</label>
                         <input type="number" class="form-control" name="basePrice" id="basePrice" value="<?= set_value('basePrice'), $item['basePrice'] ?>">
                     </div>

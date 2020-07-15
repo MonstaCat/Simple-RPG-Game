@@ -30,3 +30,20 @@ body {
 	font-family: Tahoma, sans-serif !important;
 	font-size: 0.75rem;
 }
+
+.inven-list {
+	list-style: none;
+}
+
+.inventory-list {
+	user-select: none; /* standard syntax */
+	-webkit-user-select: none; /* webkit (safari, chrome) browsers */
+	-moz-user-select: none; /* mozilla browsers */
+	-khtml-user-select: none; /* webkit (konqueror) browsers */
+	-ms-user-select: none; /* IE10+ */
+}
+
+.inventory-list:hover {
+	cursor: pointer;
+	color: cornflowerblue;
+}

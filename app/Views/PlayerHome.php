@@ -6,7 +6,7 @@
         <div class="card bg-light mb-2" style="max-width: 20rem;">
             <div class="card-header pb-0 pt-0">
                 <div class="col-12 pl-0">
-                    <p class="mb-0"><?= $user['username'] ?></p>
+                    <p class="mb-0" id="username"><?= $user['username'] ?></p>
                 </div>
             </div>
             <div class="card-body">
@@ -39,7 +39,7 @@
             </div>
             <div class="card-footer p-0">
                 <div class="col-12">
-                    <p class="text-right mb-0">Coins : 0</p>
+                    <p class="text-right mb-0">Coins : <?= $user['coins'] ?></p>
                 </div>
             </div>
         </div>
@@ -48,7 +48,7 @@
                 <a class="nav-link active" data-toggle="tab" href="#info">Info</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#inventory">Inventory</a>
+                <a class="nav-link" data-toggle="tab" href="#inventory" onclick="dblclick_equipped()">Inventory</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/logout">Logout</a>
@@ -57,19 +57,52 @@
         <div id="myTabContent" class="tab-content mt-1" style="max-width: 20rem;">
             <div class="tab-pane fade card bg-light active show" id="info">
                 <div class="card-body">
-                    <p>Thiz is info Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel.</p>
+                    <div class="card bg-info">
+                        <div class="card-body p-0">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <p class="text-light align-text-bottom text-center my-auto">ATK: <?= $user['atk'] ?></p>
+                                </div>
+                                <div class="col-sm-6">
+                                    <p class="text-light text-center my-auto">DEF: <?= $user['def'] ?></p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <p class="mb-1 mt-3">Head: </p>
+                    <p class="mb-1">Weapon: </p>
+                    <p class="mb-1">Shield: </p>
+                    <p class="mb-1">Body: </p>
+                    <p class="mb-1">Garment: </p>
+                    <p class="mb-1">Shoes: </p>
+                    <p class="mb-0">Accessory: </p>
                 </div>
             </div>
             <div class="tab-pane fade card bg-light" id="inventory">
                 <div class="card-body">
-                    <p>Thiz is inventory Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel.</p>
+                    <div class="card bg-info mb-3">
+                        <div class="card-body p-0">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <p class="text-light align-text-bottom text-center my-auto">ATK: <?= $user['atk'] ?></p>
+                                </div>
+                                <div class="col-sm-6">
+                                    <p class="text-light text-center my-auto">DEF: <?= $user['def'] ?></p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div id="InventoryListAjax"></div>
                 </div>
             </div>
         </div>
     </div>
     <div class="col-5 grid-item">
-        <div class="card bg-light">
+        <div class="card bg-light mb-3">
             <div class="card-body">
+                <?= form_open('/match/add_battle'); ?>
                 <div class="form-group">
                     <label>Select Map</label>
                     <select class="form-control" onchange="locSelect()" id="locationSelect">
@@ -80,7 +113,43 @@
                     </select>
                 </div>
                 <div id="mobSelect"></div>
-                <button class="btn btn-danger">Battle!</button>
+                <button type="submit" class="btn btn-danger">Battle!</button>
+                <?= form_close(); ?>
+            </div>
+        </div>
+        <div class="card bg-light mt-3">
+            <div class="card-body">
+                <label>Battle Log</label>
+                <table class="table table-sm">
+                    <thead>
+                        <tr>
+                            <th scope="col">
+                                Monster
+                            </th>
+                            <th scope="col">
+                                Status
+                            </th>
+                            <th scope="col">
+                                Action
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php foreach ($BattleLog as $row) : ?>
+                            <tr>
+                                <td>
+                                    <?= $row['nameMob'] ?>
+                                </td>
+                                <td>
+                                    <?= $row['battleStatus'] ?>
+                                </td>
+                                <td>
+                                    <button class="btn btn-sm btn-warning">Continue</button>
+                                </td>
+                            </tr>
+                        <?php endforeach; ?>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>

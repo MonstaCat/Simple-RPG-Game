@@ -5,6 +5,8 @@ namespace App\Controllers;
 use App\Models\UserModel;
 use App\Models\LocationModel;
 use App\Models\MobModel;
+use App\Models\BattleModel;
+use App\Models\InventoryModel;
 
 class PlayerController extends BaseController
 {
@@ -16,11 +18,15 @@ class PlayerController extends BaseController
 
         $UserModel = new UserModel();
         $LocationModel = new LocationModel();
+        $BattleModel = new BattleModel();
+        $InventoryModel = new InventoryModel();
 
         $data['user'] = $UserModel->where('username', session()->get('username'))->first();
         $data['LevelLeaderboard'] = $UserModel->orderBy('level', 'DESC')->findAll(5);
         $data['CoinLeaderboard'] = $UserModel->orderBy('coins', 'DESC')->findAll(5);
         $data['location'] = $LocationModel->findAll();
+        $data['BattleLog'] = $BattleModel->where('username', session()->get('username'))->findAll();
+        $data['inventory'] = $InventoryModel->InventoryList();
 
         return view('PlayerHome.php', $data);
     }
@@ -79,7 +85,7 @@ class PlayerController extends BaseController
         return view('PlayerProfile.php', $data);
     }
 
-    public function findMob($id)
+    public function FindMob($id)
     {
         $data = [
             'title' => 'RPG | Home'
@@ -89,5 +95,43 @@ class PlayerController extends BaseController
         $data['mob'] = $MobModel->where('idLocation', $id)->findAll();
 
         return view('ajax/MobSelect.php', $data);
+    }
+
+    public function FindInventory($id)
+    {
+        $data = [
+            'title' => 'RPG | Home'
+        ];
+
+        $InventoryModel = new InventoryModel();
+        $data['inventory'] = $InventoryModel->InventoryList();
+
+        return view('ajax/InventoryList.php', $data);
+    }
+
+    public function EquippedItem($id)
+    {
+        $data = [
+            'title' => 'RPG | Home'
+        ];
+
+        $InventoryModel = new InventoryModel();
+        $data['inventory'] = $InventoryModel->InventoryList();
+
+        $equippedStatus = $InventoryModel->where('idInventory', $id)->first();
+        if ($equippedStatus['isEquipped'] == "False") {
+            $status = "True";
+        } else {
+            $status = "False";
+        }
+
+        $saveData = [
+            'idInventory' => $id,
+            'isEquipped' => $status
+        ];
+
+        $InventoryModel->save($saveData);
+
+        return view('ajax/InventoryList.php', $data);
     }
 }

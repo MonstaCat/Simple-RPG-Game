@@ -8,5 +8,13 @@ class ItemModel extends Model
 {
     protected $table = 'item';
     protected $primaryKey = 'idItem';
-    protected $allowedFields = ['idItem', 'nameItem', 'category', 'sellPrice', 'basePrice'];
+    protected $allowedFields = [
+        'idItem',
+        'nameItem',
+        'category',
+        'atk',
+        'def',
+        'sellPrice',
+        'basePrice'
+    ];
 }

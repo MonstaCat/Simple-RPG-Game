@@ -62,4 +62,36 @@ class MatchController extends BaseController
 
         return view('/match', $data);
     }
+
+    public function AddBattle()
+    {
+        if ($this->request->getMethod() == 'post') {
+            $BattleModel = new BattleModel();
+            $MobModel = new MobModel();
+            $rand = random_string('alnum', 20);
+
+            $mob = $MobModel->where('idMob', $this->request->getVar('mob'))->first();
+
+
+            $newData = [
+                'idBattle' => $rand,
+                'username' => session()->get('username'),
+                'playerATK' => session()->get('atk'),
+                'playerMaxHP' => session()->get('maxHP'),
+                'playerHP' => session()->get('currentHP'),
+                'playerDEF' => session()->get('def'),
+                'idMob' => $this->request->getVar('mob'),
+                'nameMob' => $mob['nameMob'],
+                'mobATK' => $mob['atk'],
+                'mobMaxHP' => $mob['maxHP'],
+                'mobHP' => $mob['currentHP'],
+                'mobDEF' => $mob['def'],
+            ];
+            $BattleModel->insert($newData);
+
+            return redirect()->to('/home');
+        }
+
+        return redirect()->to('/home');
+    }
 }

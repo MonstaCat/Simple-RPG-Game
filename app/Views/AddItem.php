@@ -8,13 +8,7 @@
             <h3>Add New Item</h3>
             <hr>
             <div class="row">
-                <div class="col-12 col-sm-6">
-                    <div class="form-group">
-                        <label for="idItem">ID</label>
-                        <input type="text" class="form-control" name="idItem" id="idItem" value="<?= set_value('idItem') ?>" autocomplete="off">
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6">
+                <div class="col-12">
                     <div class="form-group">
                         <label for="nameItem">Item Name</label>
                         <input type="text" class="form-control" name="nameItem" id="nameItem" value="<?= set_value('nameItem') ?>" autocomplete="off">
@@ -24,11 +18,28 @@
             <div class="form-group">
                 <label for="category">Category</label>
                 <select class="form-control" name="category" id="category">
-                    <option value="Material">Material</option>
-                    <option value="Hat">Hat</option>
-                    <option value="Armor">Armor</option>
+                    <option value="Head">Head</option>
+                    <option value="Weapon">Weapon</option>
+                    <option value="Shield">Shield</option>
+                    <option value="Body">Body</option>
+                    <option value="Garment">Garment</option>
                     <option value="Shoes">Shoes</option>
+                    <option value="Accessory">Accessory</option>
                 </select>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-6">
+                    <div class="form-group">
+                        <label for="atk">Attack</label>
+                        <input type="number" class="form-control" name="atk" id="atk" value="<?= set_value('atk') ?>">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <div class="form-group">
+                        <label for="atk">Defense</label>
+                        <input type="number" class="form-control" name="def" id="def" value="<?= set_value('def') ?>">
+                    </div>
+                </div>
             </div>
             <div class="row">
                 <div class="col-12 col-sm-6">

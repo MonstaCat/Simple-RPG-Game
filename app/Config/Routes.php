@@ -41,6 +41,7 @@ $routes->match(['get', 'post'], '/admin/delete_item/(:any)', 'AdminController::D
 $routes->match(['get', 'post'], '/profile', 'PlayerController::PlayerProfile');
 
 $routes->match(['get', 'post'], '/match', 'MatchController::MatchSimulation');
+$routes->match(['get', 'post'], '/match/add_battle', 'MatchController::AddBattle');
 // $routes->get('/attack', 'MatchController::MatchAttack');
 
 $routes->match(['get', 'post'], '/login', 'Auth::index');

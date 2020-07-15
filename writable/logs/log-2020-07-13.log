@@ -56,3 +56,25 @@ CRITICAL - 2020-07-13 03:59:13 --> Too few arguments to function App\Controllers
 #3 C:\xampp\htdocs\rpg\public\index.php(45): CodeIgniter\CodeIgniter->run()
 #4 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
 #5 {main}
+CRITICAL - 2020-07-13 17:43:18 --> syntax error, unexpected '}'
+#0 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(865): class_exists('\\App\\Controller...', true)
+#5 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(390): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\rpg\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2020-07-13 17:53:44 --> Undefined variable: BattleLog
+#0 C:\xampp\htdocs\rpg\app\Views\PlayerHome.php(93): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 93, Array)
+#1 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Common.php(1087): CodeIgniter\View\View->render('PlayerHome.php', Array, true)
+#3 C:\xampp\htdocs\rpg\app\Controllers\PlayerController.php(25): view('PlayerHome.php', Array)
+#4 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(914): App\Controllers\PlayerController->index()
+#5 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlayerController))
+#6 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\rpg\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\rpg\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}
